@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <motion.section
       id="home"
+      
       className="container py-5 text-center"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}

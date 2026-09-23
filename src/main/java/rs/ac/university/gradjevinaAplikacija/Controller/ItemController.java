@@ -1,8 +1,6 @@
 package rs.ac.university.gradjevinaAplikacija.Controller;
 
 
-
-
 @RestController
 @RequestMapping(path = "/api/item")
 public class ItemController

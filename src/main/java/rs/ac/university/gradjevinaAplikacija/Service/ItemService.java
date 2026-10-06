@@ -1,8 +1,7 @@
 package rs.ac.university.gradjevinaAplikacija.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import java.springframework.stereotype.Service;
-import rs.ac.university.gradjevinaAplikacija.Entity.Item;
+import org.springframework.stereotype.Service;
 import rs.ac.university.gradjevinaAplikacija.Repository.ItemRepository;
 
 
@@ -10,12 +9,12 @@ import rs.ac.university.gradjevinaAplikacija.Repository.ItemRepository;
 public class ItemService
 {
 
-	private final itemRepository;
+	private final ItemRepository itemRepository;
 
 	@Autowired
-	public ItemService(ItemRepository ItemRepository)
+	public ItemService(ItemRepository itemRepository)
 	{
-		this.itemRepository                                                
+		this.itemRepository = itemRepository;                                    
 	}
 
 

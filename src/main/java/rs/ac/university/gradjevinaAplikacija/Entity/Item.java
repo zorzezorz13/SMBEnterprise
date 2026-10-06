@@ -1,3 +1,15 @@
+package rs.ac.university.gradjevinaAplikacija.Entity;
+
+
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import rs.ac.university.gradjevinaAplikacija.Entity.Image;
 
 
@@ -7,11 +19,11 @@ import rs.ac.university.gradjevinaAplikacija.Entity.Image;
 @NoArgsConstructor
 public class Item {
 
+	@Id 
 	@Column(name="itemId")
 	@JsonFormat
 	private Integer id;
 	@Column(name="text")
-	@JsonFormat
 	private String text;
 	@Column(name="description")
 	private String description;
